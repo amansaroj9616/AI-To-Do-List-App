@@ -1,5 +1,5 @@
 # 📝 AI To-Do App
-![alt text]("https://github.com/amansaroj9616/AI-To-Do-List-App/blob/e6f1bee3016252744952169d55d062c78f0d41c8/Screenshot%202025-08-24%20110452.png")
+![alt text](https://github.com/amansaroj9616/AI-To-Do-List-App/blob/e6f1bee3016252744952169d55d062c78f0d41c8/Screenshot%202025-08-24%20110452.png)
 
 
 A lightweight **AI-assisted To-Do List** app that helps you organize tasks smarter.  
