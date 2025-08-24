@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI To‑Do</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="manifest" href="manifest.webmanifest"/>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>AI To‑Do</h1>
+      <button id="settingsBtn" title="Settings">⚙️</button>
+    </header>
+
+    <section class="composer">
+      <input id="taskInput" type="text" placeholder="e.g., Email the client by 5pm tomorrow" autofocus />
+      <button id="aiSuggestBtn" title="Let AI parse & suggest">✨ AI</button>
+      <button id="addBtn">Add</button>
+    </section>
+
+    <section id="suggestion" class="suggestion hidden"></section>
+
+    <section class="filters">
+      <select id="statusFilter">
+        <option value="all">All</option>
+        <option value="open">Open</option>
+        <option value="done">Done</option>
+      </select>
+      <select id="priorityFilter">
+        <option value="all">All priorities</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <input id="searchInput" type="search" placeholder="Search…" />
+      <button id="clearDoneBtn" title="Clear completed">🧹</button>
+    </section>
+
+    <ul id="list" class="list"></ul>
+
+    <dialog id="settingsDialog">
+      <form method="dialog">
+        <h2>Settings</h2>
+        <label>
+          OpenAI API Key (optional):
+          <input id="apiKey" type="password" placeholder="sk-..."/>
+        </label>
+        <p class="hint">If provided, AI will do smarter parsing (client-side only).</p>
+        <menu>
+          <button id="saveSettings">Save</button>
+          <button value="cancel">Close</button>
+        </menu>
+      </form>
+    </dialog>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
