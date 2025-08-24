@@ -16,3 +16,9 @@ Built with **HTML, CSS, JavaScript** (no backend required).
 - 🔑 **Optional OpenAI Integration**: Add your API key in **Settings** for smarter AI parsing (remains on client-side).
 
 ## 📂 Project Structure
+.
+├── index.html # Main app UI
+├── style.css # App styling
+├── script.js # Core logic + AI parser
+├── manifest.webmanifest # PWA config
+└── README.md # Documentation
